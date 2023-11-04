@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://lsp.gay/2023/11/05/1-2/</loc>
+    
+    <lastmod>2023-11-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://lsp.gay/2023/11/02/1-1/</loc>
     
     <lastmod>2023-11-01</lastmod>
@@ -40,7 +49,7 @@
 
   <url>
     <loc>https://lsp.gay/</loc>
-    <lastmod>2023-11-02</lastmod>
+    <lastmod>2023-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -48,14 +57,21 @@
   
   <url>
     <loc>https://lsp.gay/tags/1/</loc>
-    <lastmod>2023-11-02</lastmod>
+    <lastmod>2023-11-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://lsp.gay/tags/tor/</loc>
+    <lastmod>2023-11-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://lsp.gay/tags/cloudflare/</loc>
-    <lastmod>2023-11-02</lastmod>
+    <lastmod>2023-11-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
