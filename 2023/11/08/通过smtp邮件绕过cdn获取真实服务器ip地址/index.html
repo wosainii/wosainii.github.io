@@ -12,6 +12,7 @@
 
     
     <title>
+        通过smtp邮件绕过cdn获取真实服务器ip地址 |
         
         𝘾𝙝𝙞𝙘𝙠𝙚𝙣的个人空间</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -22,16 +23,26 @@
     
 <link rel="stylesheet" href="/css/loader.css">
 
-    <meta name="description" content="欢迎访问我的博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="𝘾𝙝𝙞𝙘𝙠𝙚𝙣的个人空间">
-<meta property="og:url" content="https://lsp.gay/index.html">
+    <meta name="description" content="这个方法只对有注册邮箱，找回密码有邮箱验证的有效没有的不用试了 目标网站：https:&#x2F;&#x2F;www.soraacg.com&#x2F; 通过ip查询工具发现使用了cdn，使用了cloudflare 找到用户注册  发送验证码  打开邮箱里查看，博主用的QQ邮箱  根据图片走，点击显示原文  成功获取源ip 对方服务器存在禁ping状态  tcp ping一切正常  如何防止被抓到呢： 目前163 qq 139">
+<meta property="og:type" content="article">
+<meta property="og:title" content="通过smtp邮件绕过cdn获取真实服务器ip地址">
+<meta property="og:url" content="https://lsp.gay/2023/11/08/%E9%80%9A%E8%BF%87smtp%E9%82%AE%E4%BB%B6%E7%BB%95%E8%BF%87cdn%E8%8E%B7%E5%8F%96%E7%9C%9F%E5%AE%9E%E6%9C%8D%E5%8A%A1%E5%99%A8ip%E5%9C%B0%E5%9D%80/index.html">
 <meta property="og:site_name" content="𝘾𝙝𝙞𝙘𝙠𝙚𝙣的个人空间">
-<meta property="og:description" content="欢迎访问我的博客">
+<meta property="og:description" content="这个方法只对有注册邮箱，找回密码有邮箱验证的有效没有的不用试了 目标网站：https:&#x2F;&#x2F;www.soraacg.com&#x2F; 通过ip查询工具发现使用了cdn，使用了cloudflare 找到用户注册  发送验证码  打开邮箱里查看，博主用的QQ邮箱  根据图片走，点击显示原文  成功获取源ip 对方服务器存在禁ping状态  tcp ping一切正常  如何防止被抓到呢： 目前163 qq 139">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://52sex.top/wp-content/uploads/2023/11/983764d800e306e0df6aad9fb5d5af9d.webp">
+<meta property="og:image" content="https://52sex.top/wp-content/uploads/2023/11/cc4adcc03a42f3520169381b4361eefc.webp">
+<meta property="og:image" content="https://52sex.top/wp-content/uploads/2023/11/16f9787eb16df0d20d80713b3297af1a.webp">
+<meta property="og:image" content="https://52sex.top/wp-content/uploads/2023/11/0426654557cb1ef318d862bcea759950.webp">
+<meta property="og:image" content="https://52sex.top/wp-content/uploads/2023/11/b9b56c0c0fa7a9fb5da8ff032c5473b9.webp">
+<meta property="og:image" content="http://52sex.top/wp-content/uploads/2023/11/06bbc05426c4c6b520708ebd436853b4.webp">
+<meta property="og:image" content="https://52sex.top/wp-content/uploads/2023/11/36accfdd7edb9c7e980a638fc39f34a6.webp">
+<meta property="article:published_time" content="2023-11-08T05:09:19.000Z">
+<meta property="article:modified_time" content="2023-11-08T05:22:22.169Z">
 <meta property="article:author" content="𝘾𝙝𝙞𝙘𝙠𝙚𝙣">
-<meta property="article:tag" content="hexo,chicken">
+<meta property="article:tag" content="网络安全">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://52sex.top/wp-content/uploads/2023/11/983764d800e306e0df6aad9fb5d5af9d.webp">
     
         <link rel="alternate" href="/atom.xml" title="𝘾𝙝𝙞𝙘𝙠𝙚𝙣的个人空间" type="application/atom+xml">
     
@@ -106,7 +117,7 @@
         <div id="wrap">
             <header id="header">
     
-        <img data-src="/images/banner.jpg" data-sizes="auto" alt="" class="lazyload">
+        <img data-src="/images/banner.jpg" data-sizes="auto" alt="通过smtp邮件绕过cdn获取真实服务器ip地址" class="lazyload">
     
     <div id="header-outer" class="outer">
         <div id="header-title" class="inner">
@@ -114,16 +125,12 @@
                 
                     
                     
-                        <a href="/" id="logo"><h1>𝘾𝙝𝙞𝙘𝙠𝙚𝙣的个人空间</h1></a>
+                        <a href="/" id="logo"><h1>通过smtp邮件绕过cdn获取真实服务器ip地址</h1></a>
                     
                 
             </div>
             
                 
-                
-                    <h2 id="subtitle-wrap">
-                        <a href="/" id="subtitle">欢迎访问本站</a>
-                    </h2>
                 
             
         </div>
@@ -170,191 +177,116 @@
 </header>
 
             <div id="content" class="outer">
-                <section id="main">
-    
-        
-    <div class="post-wrap-left wow fadeInUp">
-        
-            <a class="post-link" href="/2023/10/21/1/"></a>
-        
-        
-            <div class="post-sticky">置顶</div>
-        
-        <div class="post-cover-left">
-            
-                
-                
-                    <img data-src="https://d-sketon.top/img/backimg/bg1.jpg" data-sizes="auto" alt="ACG资源下载" class="lazyload">
-                
+                <section id="main"><article id="post-通过smtp邮件绕过cdn获取真实服务器ip地址" class="h-entry article article-type-post"
+         itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+    <div class="article-inner">
+        <div class="article-meta">
+            <div class="article-date wow slideInLeft">
+    <a href="/2023/11/08/%E9%80%9A%E8%BF%87smtp%E9%82%AE%E4%BB%B6%E7%BB%95%E8%BF%87cdn%E8%8E%B7%E5%8F%96%E7%9C%9F%E5%AE%9E%E6%9C%8D%E5%8A%A1%E5%99%A8ip%E5%9C%B0%E5%9D%80/" class="article-date-link">
+        <time datetime="2023-11-08T05:09:19.000Z"
+              itemprop="datePublished">2023-11-08</time>
+    </a>
+</div>
+
             
 
         </div>
-        <div class="post-info">
-            <div class="post-meta">
-                <a><span class="icon-calendar"></span>2023-10-21</a>
-                
-                    <a><span class="icon-pencil"></span>9 字</a>
-                
-                
-                    <a><span class="icon-clock"></span>1 分钟</a>
-                
-            </div>
-            <h2 class="post-title">ACG资源下载</h2>
-            <article class="post-article">
-                
-                    https://52sex.top
-个人ACG资源站
+        <div class="hr-line"></div>
+        
 
-                
-            </article>
+        <div class="e-content article-entry" itemprop="articleBody">
+            
+                <p>这个方法只对有注册邮箱，找回密码有邮箱验证的有效<br>没有的不用试了</p>
+<p>目标网站：<br><a target="_blank" rel="noopener" href="https://www.soraacg.com/">https://www.soraacg.com/</a></p>
+<p>通过ip查询工具发现使用了cdn，使用了cloudflare<br><img src="https://52sex.top/wp-content/uploads/2023/11/983764d800e306e0df6aad9fb5d5af9d.webp" alt="预览图" title="1"></p>
+<p>找到用户注册</p>
+<p><img src="https://52sex.top/wp-content/uploads/2023/11/cc4adcc03a42f3520169381b4361eefc.webp" alt="预览图" title="1"></p>
+<p>发送验证码</p>
+<p><img src="https://52sex.top/wp-content/uploads/2023/11/16f9787eb16df0d20d80713b3297af1a.webp" alt="预览图" title="1"></p>
+<p>打开邮箱里查看，博主用的QQ邮箱</p>
+<p><img src="https://52sex.top/wp-content/uploads/2023/11/0426654557cb1ef318d862bcea759950.webp" alt="预览图" title="1"></p>
+<p>根据图片走，点击显示原文</p>
+<p><img src="https://52sex.top/wp-content/uploads/2023/11/b9b56c0c0fa7a9fb5da8ff032c5473b9.webp" alt="预览图" title="1"></p>
+<p>成功获取源ip</p>
+<p>对方服务器存在禁ping状态</p>
+<p><img src="http://52sex.top/wp-content/uploads/2023/11/06bbc05426c4c6b520708ebd436853b4.webp" alt="预览图" title="1"></p>
+<p>tcp ping一切正常</p>
+<p><img src="https://52sex.top/wp-content/uploads/2023/11/36accfdd7edb9c7e980a638fc39f34a6.webp" alt="预览图" title="1"></p>
+<p>如何防止被抓到呢：</p>
+<p>目前163 qq 139  这些都会泄露源站</p>
+<p>测试只有阿里邮箱 outlook不会泄露</p>
+<p>用这两个邮箱或者不用</p>
+
+            
         </div>
+        <footer class="article-footer">
+            <a data-url="https://lsp.gay/2023/11/08/%E9%80%9A%E8%BF%87smtp%E9%82%AE%E4%BB%B6%E7%BB%95%E8%BF%87cdn%E8%8E%B7%E5%8F%96%E7%9C%9F%E5%AE%9E%E6%9C%8D%E5%8A%A1%E5%99%A8ip%E5%9C%B0%E5%9D%80/" data-id="clopbef96000628ttfe4kh4ho" data-title="通过smtp邮件绕过cdn获取真实服务器ip地址"
+               class="article-share-link">分享</a>
+            
+            
+            
+                <a href="/2023/11/08/%E9%80%9A%E8%BF%87smtp%E9%82%AE%E4%BB%B6%E7%BB%95%E8%BF%87cdn%E8%8E%B7%E5%8F%96%E7%9C%9F%E5%AE%9E%E6%9C%8D%E5%8A%A1%E5%99%A8ip%E5%9C%B0%E5%9D%80/#comments" class="article-comment-link">
+                    <span class="post-comments-count twikoo-comment-count" data-path="/2023/11/08/%E9%80%9A%E8%BF%87smtp%E9%82%AE%E4%BB%B6%E7%BB%95%E8%BF%87cdn%E8%8E%B7%E5%8F%96%E7%9C%9F%E5%AE%9E%E6%9C%8D%E5%8A%A1%E5%99%A8ip%E5%9C%B0%E5%9D%80/"
+                          itemprop="commentCount"></span>
+                    留言
+                </a>
+                <script>
+                    twikoo.getCommentsCount({
+                          envId: 'https://comment.qwq2333.uk',
+                          region: '',
+                          urls: [
+                            '/2023/11/08/%E9%80%9A%E8%BF%87smtp%E9%82%AE%E4%BB%B6%E7%BB%95%E8%BF%87cdn%E8%8E%B7%E5%8F%96%E7%9C%9F%E5%AE%9E%E6%9C%8D%E5%8A%A1%E5%99%A8ip%E5%9C%B0%E5%9D%80/'
+                          ],
+                          includeReply: false
+                      }).then(function (res) {
+                          document.querySelector('.twikoo-comment-count').innerText = res[0].count;
+                      }).catch(function (err) {
+                          console.error(err);
+                      });
+                </script>
+            
+            
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/" rel="tag">网络安全</a></li></ul>
+
+
+        </footer>
     </div>
-
-
     
         
-    <div class="post-wrap-right wow fadeInUp">
+    <nav id="article-nav" class="wow fadeInUp">
         
-            <a class="post-link" href="/2023/11/08/%E9%80%9A%E8%BF%87smtp%E9%82%AE%E4%BB%B6%E7%BB%95%E8%BF%87cdn%E8%8E%B7%E5%8F%96%E7%9C%9F%E5%AE%9E%E6%9C%8D%E5%8A%A1%E5%99%A8ip%E5%9C%B0%E5%9D%80/"></a>
         
-        <div class="post-cover-right">
-            
+            <div class="article-nav-link-wrap article-nav-link-right">
                 
+                    
+                    
+                        <img data-src="https://d-sketon.top/img/backimg/bg1.jpg" data-sizes="auto" alt="Tor+宝塔快速搭建暗网网站" class="lazyload">
+                    
                 
-                    <img data-src="https://d-sketon.top/img/backimg/bg1.jpg" data-sizes="auto" alt="通过smtp邮件绕过cdn获取真实服务器ip地址" class="lazyload">
-                
-            
-        </div>
-        <div class="post-info">
-            <div class="post-meta">
-                <a><span class="icon-calendar"></span>2023-11-08</a>
-                
-                    <a><span class="icon-pencil"></span>157 字</a>
-                
-                
-                    <a><span class="icon-clock"></span>1 分钟</a>
-                
+                <a href="/2023/11/05/1-2/"></a>
+                <div class="article-nav-caption">后一篇</div>
+                <h3 class="article-nav-title">
+                    
+                        Tor+宝塔快速搭建暗网网站
+                    
+                </h3>
             </div>
-            <h2 class="post-title">通过smtp邮件绕过cdn获取真实服务器ip地址</h2>
-            <article class="post-article">
-                
-                    这个方法只对有注册邮箱，找回密码有邮箱验证的有效没有的不用试了
-目标网站：https://www.soraacg.com/
-通过ip查询工具发现使用了cdn，使用了cloudflare
-找到用户注册
-
-发送验证码
-
-打开邮箱里查看，博主用的QQ邮箱
-
-根据图片走，点击显示原文
-
-成功获取源ip
-对方服务器存在禁ping状态
-
-tcp ping一切正常
-
-如何防止被抓到呢：
-目前163 qq 139  这些都会泄露源站
-测试只有阿里邮箱 outlook不会泄露
-用这两个邮箱或者不用
-
-                
-            </article>
-        </div>
-    </div>
+        
+    </nav>
 
 
     
-        
-    <div class="post-wrap-left wow fadeInUp">
-        
-            <a class="post-link" href="/2023/11/05/1-2/"></a>
-        
-        
-        <div class="post-cover-left">
-            
-                
-                
-                    <img data-src="https://d-sketon.top/img/backimg/bg1.jpg" data-sizes="auto" alt="Tor+宝塔快速搭建暗网网站" class="lazyload">
-                
-            
-
-        </div>
-        <div class="post-info">
-            <div class="post-meta">
-                <a><span class="icon-calendar"></span>2023-11-05</a>
-                
-                    <a><span class="icon-pencil"></span>246 字</a>
-                
-                
-                    <a><span class="icon-clock"></span>1 分钟</a>
-                
-            </div>
-            <h2 class="post-title">Tor+宝塔快速搭建暗网网站</h2>
-            <article class="post-article">
-                
-                    安装宝塔
-Centos安装脚本
-yum install -y wget &amp;amp;&amp;amp; wget -O install.sh http://www.btkaixin.net/install/install_6.0.sh &amp;amp;&amp;amp; sh install.sh
-Ubuntu&amp;#x2F;Debian安装脚本
-wget -O install.sh http://www.btkaixin.net/install/install_6.0.sh &amp;amp;&amp;amp; bash install.sh
-然后安装环境根据需要安装，推荐LNMP
-
-然后安装tor 
-Centos
-yum insta
-                
-            </article>
-        </div>
-    </div>
+</article>
 
 
-    
-        
-    <div class="post-wrap-right wow fadeInUp">
-        
-            <a class="post-link" href="/2023/11/02/1-1/"></a>
-        
-        <div class="post-cover-right">
-            
-                
-                
-                    <img data-src="https://d-sketon.top/img/backimg/bg1.jpg" data-sizes="auto" alt="wordpress Cloudflare全站缓存规则分享" class="lazyload">
-                
-            
-        </div>
-        <div class="post-info">
-            <div class="post-meta">
-                <a><span class="icon-calendar"></span>2023-11-02</a>
-                
-                    <a><span class="icon-pencil"></span>130 字</a>
-                
-                
-                    <a><span class="icon-clock"></span>1 分钟</a>
-                
-            </div>
-            <h2 class="post-title">wordpress Cloudflare全站缓存规则分享</h2>
-            <article class="post-article">
-                
-                    绕过已登陆用户缓存，评论内容以及后台
-
-表达式:
-(http.host eq “” and http.cookie contains “wp-postpass”) or (http.cookie contains “comment_author”) or (http.cookie contains “wordpress_logged_in”)
-
-这个根据自己站点来写，站点持续更新文章就写1天就行了，需要注意的是每次写完文章需要清空缓存才可以，不然不显示，需要等页面规则写的有效期以后才会显示
-
-然后打开测速工具看到HIT就是缓存成功了
-cf-cache-status: HIT
 
 
-                
-            </article>
-        </div>
-    </div>
 
 
-    
+     <div id="comments" class="tcomment"></div>
+
+
+
 
 
 
