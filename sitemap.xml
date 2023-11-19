@@ -83,13 +83,6 @@
 
   
   <url>
-    <loc>https://lsp.gay/tags/cloudflare/</loc>
-    <lastmod>2023-11-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://lsp.gay/tags/tor/</loc>
     <lastmod>2023-11-19</lastmod>
     <changefreq>weekly</changefreq>
@@ -98,6 +91,13 @@
   
   <url>
     <loc>https://lsp.gay/tags/1/</loc>
+    <lastmod>2023-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://lsp.gay/tags/cloudflare/</loc>
     <lastmod>2023-11-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
